@@ -5,13 +5,13 @@ metadata:
     kompose.cmd: kompose convert
     kompose.version: 1.26.1 (HEAD)
   labels:
-    io.kompose.service: mysql
-  name: mysql
+    io.kompose.service: mongo
+  name: mongo
 spec:
   ports:
-    - name: "3307"
-      port: 3307
-      targetPort: 3306
+    - name: "27017"
+      port: 27017
+      targetPort: 27017
   selector:
-    io.kompose.service: mysql
+    io.kompose.service: mongo
   type : LoadBalancer

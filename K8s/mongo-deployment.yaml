@@ -5,13 +5,13 @@ metadata:
     kompose.cmd: kompose convert
     kompose.version: 1.26.1 (HEAD)
   labels:
-    io.kompose.service: api
-  name: api
+    io.kompose.service: mongo
+  name: mongo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: api
+      io.kompose.service: mongo
   strategy: {}
   template:
     metadata:
@@ -20,21 +20,21 @@ spec:
         kompose.version: 1.26.1 (HEAD)
       labels:
         io.kompose.network/network-mongoapi: "true"
-        io.kompose.service: api
+        io.kompose.service: mongo
     spec:
       containers:
         - env:
-            - name: FLASK_APP
-          image: sourirob/projet_filrouge-main_api
-          name: api-projet
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: root
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: admin
+          image: mongo:latest
+          name: mongodb
           ports:
-            - containerPort: 9000
-          resources:
+            - containerPort: 27017
+          resources: 
             limits:
-              cpu: "1"
-              memory: "1Gi"
-            requests:
-              cpu: "1"
-              memory: "1Gi"
+              cpu: "3"
+              memory: "2Gi"
       restartPolicy: Always
 status: {}

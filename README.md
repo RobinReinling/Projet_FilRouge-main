@@ -24,4 +24,4 @@ kubectl apply -f .
 
 minikube dashboard
 
-localhost:75000 (dans la barre de recherche)
+localhost:9000 (dans la barre de recherche)
