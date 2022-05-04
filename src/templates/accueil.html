@@ -420,6 +420,7 @@
                                     <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
                                     <h2>Savoir faire</h2>
                                     <h4>Qualité du travail fourni :</h4>
+                                    <form action="/accueil" method="post">
                                     <div>
                                         <input name="question1" id="question1" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
@@ -568,10 +569,11 @@
                                     </div>
 
 
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" name="questionnaire1" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                         Envoyer mes réponses 
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -593,6 +595,7 @@
                                     <p class="item-intro text-muted">Vous et votre entreprise...</p>
                                     <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
                                     <h4>Avez vous l'impression que votre travail contribue à l'effort de l'entreprise ?</h4>
+                                    <form action="/accueil" method="post">
                                     <div>
                                         <input name="question29" id="question29" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
@@ -652,10 +655,11 @@
                                         <input name="question40" id="question40" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
                                     </div>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                         Envoyer mes réponses
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -677,6 +681,7 @@
                                     <p class="item-intro text-muted">Parlons un peu de vous...</p>
                                     <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
                                     <h4>Je pense que je suis une personne de valeur, au moins égale à n'importe qui d'autre ?</h4>
+                                    <form action="/accueil" method="post">
                                     <div>
                                         <input name="question41" id="question41" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
@@ -726,10 +731,11 @@
                                         <input name="question50" id="question50" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
                                     </div>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                         Envoyer mes réponses
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -751,6 +757,7 @@
                                     <p class="item-intro text-muted">Pour aller plus loin...</p>
                                     <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
                                     <h4>Vous sentez vous régulièrement de bonne humeur ?</h4>
+                                    <form action="/accueil" method="post">
                                     <div>
                                         <input name="question51" id="question51" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
@@ -810,10 +817,11 @@
                                         <input name="question62" id="question62" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
                                     </div>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="submits">
                                         <i class="fas fa-times me-1"></i>
                                         Envoyer mes réponses 
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -835,6 +843,7 @@
                                     <p class="item-intro text-muted">Vos conditions de travail</p>
                                     <p class="item-intro text-muted">Pour chaque questionnaire, vous répondrez à l'aide d'un curseur noté de 0 à 10. 0 signifie totalement en désacord et 10 complètement d'accord</p>
                                     <h4>Pensez vous que vous manquez de formation pour évoluer dans votre travail ?</h4>
+                                    <form action="/accueil" method="post">
                                     <div>
                                         <input name="question63" id="question63" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
@@ -894,10 +903,11 @@
                                         <input name="question74" id="question74" type="range" value="1" min="0" max="10" step="1" oninput="this.nextElementSibling.value = this.value" style="width: 300px"/>
                                         <output id="rangevalue3">1</output>
                                     </div>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="submit">
                                         <i class="fas fa-times me-1"></i>
                                         Envoyer mes réponses
                                     </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
