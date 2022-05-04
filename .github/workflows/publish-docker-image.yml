@@ -35,4 +35,3 @@ jobs:
           context: .
           push: true
           tags: sourirob/welfare-repository${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
