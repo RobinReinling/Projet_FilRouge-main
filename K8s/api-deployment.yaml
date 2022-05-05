@@ -25,8 +25,8 @@ spec:
       containers:
         - env:
             - name: FLASK_APP
-          # image: sourirob/projet_filrouge-main_api
-          image: RobinReinling/projet_filrouge-main_api
+          image: sourirob/projet_filrouge-main_api
+          # image: RobinReinling/projet_filrouge-main_api
           name: api-projet
           ports:
             - containerPort: 9000
