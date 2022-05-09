@@ -91,6 +91,11 @@ def accueil():
     return render_template('accueil.html')
 
 
+#   page de visualisation des graphiques
+@init_app_routes.route("/graphique", methods=['GET'])
+def graphique():
+    return render_template("graphique.html")
+
 #   page de connexion du site
 @init_app_routes.route("/index", methods=['GET', 'POST'])
 def index():
